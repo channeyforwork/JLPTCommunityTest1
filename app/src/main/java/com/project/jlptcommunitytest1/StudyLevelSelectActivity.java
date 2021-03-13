@@ -15,5 +15,7 @@ public class StudyLevelSelectActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_study_level_select);
+
+        //브렌치용 주석 추가1
     }
 }
