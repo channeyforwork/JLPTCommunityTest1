@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--activity_main
+    MainActivity 담당 xml
+    사용자가 로그인 과정을 거치고 난 이후 보여지는 홈 화면
+    상단 부분에는 로그인한 유저의 이름과 개인 공부이력 항목 으로 이어지는 버튼 구성
+    하단 부분에는 개인 단어 암기, 단어 경쟁전, 일본어 커뮤니티, 설정 하는 곳으로 이어지는 구성-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+
+    <!-- 상단 부분 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="8">
+
+
+
+    </LinearLayout>
+    <!-- 상단 부분 레이아웃 종료지점 -->
+
+
+
+
+
+    <!-- 하단 부분 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+        <!-- 개인 단어 암기 레이아웃 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!-- 개인 단어 암기 레이아웃 onClick기능 및 색상 (coral)색 추가 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/coral"
+                android:onClick="personalStudy">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="개인 단어 암기"
+                    android:textSize="50sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="JLPT 단계별로 단어를 공부합니다"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- 개인 단어 암기 레이아웃 onClick기능 및 색상 (coral)색 추가 종료지점 -->
+
+        </LinearLayout>
+        <!-- 개인 단어 암기 레이아웃 종료지점 -->
+
+
+        <!-- 단어 경쟁전 레이아웃 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!-- 단어 경쟁전 레이아웃 onClick기능 및 색상 (purple_200)색 추가 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/purple_200"
+                android:onClick="competition">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="단어 경쟁전"
+                    android:textSize="50sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="JLPT 단계별로 상대방과 경쟁합니다"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- 단어 경쟁전 레이아웃 onClick기능 및 색상 (purple_200)색 추가 종료지점 -->
+
+        </LinearLayout>
+        <!-- 단어 경쟁전 레이아웃 종료지점 -->
+
+
+        <!-- 일본어 커뮤니티 레이아웃 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!-- 일본어 커뮤니티 레이아웃 onClick기능 및 색상 (teal_200)색 추가 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/teal_200"
+                android:onClick="community">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="일본어 커뮤니티"
+                    android:textSize="50sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="JLPT 외의 생활 단어 및 정보를 공유해보세요"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- 일본어 커뮤니티 레이아웃 onClick기능 및 색상 (teal_200)색 추가 종료지점 -->
+
+        </LinearLayout>
+        <!-- 일본어 커뮤니티 레이아웃 종료지점 -->
+
+
+        <!-- 설정 조회 레이아웃 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!-- 설정 레이아웃 onClick기능 및 색상 (goldenRod)색 추가 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/goldenRod"
+                android:onClick="setting">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="설정"
+                    android:textSize="50sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="개인 및 기타 설정"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- 설정 레이아웃 onClick기능 및 색상 (goldenRod)색 추가 종료지점 -->
+
+        </LinearLayout>
+        <!-- 설정 레이아웃 종료지점 -->
+
+
+    </LinearLayout>
+    <!-- 하단 부분 레이아웃 종료지점 -->
+
+</LinearLayout>

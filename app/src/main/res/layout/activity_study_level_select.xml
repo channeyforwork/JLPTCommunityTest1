@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--activity_study_level_select
+    StudyLevelSelectActivity 담당 xml
+    activity_main 에서 개인 단어 암기를 클릭 시 넘어온다
+    난이도를 선택해서 들어갈 수 있다-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudyLevelSelectActivity">
+
+</androidx.constraintlayout.widget.ConstraintLayout>
